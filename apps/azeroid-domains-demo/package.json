@@ -1,0 +1,47 @@
+{
+  "name": "azeroid-domains-demo",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host localhost --port 3001",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --max-warnings 0 --ext ts,tsx",
+    "lint:fix": "eslint . --ext ts,tsx --fix"
+  },
+  "dependencies": {
+    "@polkadot/api": "^10.1.4",
+    "@polkadot/extension-dapp": "^0.45.3",
+    "@talismn/balances": "workspace:*",
+    "@talismn/balances-default-modules": "workspace:*",
+    "@talismn/balances-react": "workspace:*",
+    "@talismn/balances-substrate-psp22": "workspace:*",
+    "@talismn/chaindata-provider-extension": "workspace:*",
+    "anylogger": "^1.0.11",
+    "anylogger-loglevel": "^1.0.0",
+    "loglevel": "^1.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@talismn/eslint-config": "workspace:*",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react": "^3.0.0",
+    "autoprefixer": "^10.4.12",
+    "eslint": "^7.5.0",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^4.9.3",
+    "vite": "^4.4.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@talismn/eslint-config/react"
+    ]
+  }
+}

@@ -403,7 +403,7 @@ export const SubPsp22Module: NewBalanceModule<
   }
 }
 
-const makeContractCaller =
+export const makeContractCaller =
   ({
     chainConnector,
     chainId,
